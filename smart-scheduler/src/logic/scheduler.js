@@ -57,12 +57,8 @@ function addEvent(name, start, durationInMinutes) {
     return event;
 }
 
-// 테스트: 30분짜리 새로운 이벤트 추가
-try {
-    const newEvent = findBestSlotAndAddEvent('새로운 회의', 30);
-    console.log('새 일정 추가됨:', newEvent);
-} catch (error) {
-    console.error(error.message);
+function getSchedules() {
+    return events;
 }
 
-module.exports = { findBestSlotAndAddEvent, addEvent };
+module.exports = { findBestSlotAndAddEvent, addEvent, getSchedules };
