@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Scheduler</h1>
+        <form id="schedule-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" required>
+            
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" required>
+            
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" required>
+            
+            <button type="submit">Add Schedule</button>
+        </form>
+        <div id="suggested-schedule">
+            <h2>Suggested Schedule</h2>
+            <ul id="schedule-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
